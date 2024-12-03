@@ -75,12 +75,13 @@ def test_attack(base_system_prompt: str, jailbreak: str, fail_once=True):
         print(TerminalColors.GREEN+ "All tests passed")
 
 
-# ATTACK 1
-# print("## TESTING ATTACK 1 ## \n")
-# test_attack(base_system_prompt1_1, attack1)
-# test_attack(base_system_prompt1, attack1)
+if __name__=="__main__":
+    # ATTACK 1
+    # print("## TESTING ATTACK 1 ## \n")
+    # test_attack(base_system_prompt1_1, attack1)
+    # test_attack(base_system_prompt1, attack1)
 
-# #ATTACK 2
-print("## TESTING ATTACK 2 ## \n")
-test_attack(base_system_prompt2, attack2)
-test_attack(base_system_prompt2_1, attack2)
+    # #ATTACK 2
+    print("## TESTING ATTACK 2 ## \n")
+    test_attack(base_system_prompt2, attack2, fail_once=False)
+    test_attack(base_system_prompt2_1, attack2, fail_once=False)
